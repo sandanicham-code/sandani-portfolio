@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sandani Piyasena – French Educator</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--surface:#fff;--ink:#17203a;--muted:#56617c;--line:#d9e0ee;--accent:#2a56c6;--accent2:#c8415f;--soft:#e7edfb;--ph:#edf0f8;--glass:rgba(255,255,255,.82);
+box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1524;--surface:#18203a;--ink:#eef1f9;--muted:#a8b2ca;--line:#2a3452;--accent:#8fabf2;--accent2:#f08aa1;--soft:#222c4a;--ph:#1f2842;--glass:rgba(24,32,58,.82);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1524;--surface:#18203a;--ink:#eef1f9;--muted:#a8b2ca;--line:#2a3452;--accent:#8fabf2;--accent2:#f08aa1;--soft:#222c4a;--ph:#1f2842;--glass:rgba(24,32,58,.82);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:6rem}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Newsreader,Georgia,"Times New Roman",serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:66rem;margin:0 auto;padding:0 1.25rem}
+.float{position:fixed;z-index:20;left:50%;transform:translateX(-50%);top:calc(.75rem + env(safe-area-inset-top,0px));width:min(66rem,calc(100% - 1.5rem));display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.55rem .6rem .55rem 1.1rem;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:99px;box-shadow:0 8px 28px rgba(15,25,60,.14)}
+.brand{font-family:Newsreader,Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;white-space:nowrap}
+.float nav{display:flex;gap:.1rem;font-size:.92rem;overflow-x:auto;scrollbar-width:none}
+.float nav a{color:var(--muted);text-decoration:none;padding:.35rem .7rem;border-radius:99px;white-space:nowrap}
+.float nav a:hover{background:var(--soft);color:var(--accent)}
+.cv{background:var(--accent);color:var(--bg);font-weight:600;font-size:.9rem;text-decoration:none;padding:.5rem 1.05rem;border-radius:99px;white-space:nowrap}
+.hero{position:relative;overflow:hidden;padding:9rem 0 4.5rem;background:radial-gradient(60rem 28rem at 85% -10%,var(--soft),transparent 70%),radial-gradient(40rem 22rem at -5% 90%,color-mix(in srgb,var(--accent2) 14%,transparent),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(3rem,8.5vw,6rem);font-weight:700;letter-spacing:-.02em;line-height:.98}
+.role{font-family:Newsreader,Georgia,serif;font-style:italic;font-size:1.6rem;color:var(--accent2);margin:1rem 0}
+.hero p{color:var(--muted);max-width:34rem;margin:0 0 1.6rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:99px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;padding:.75rem;background:var(--ph);border:2px dashed var(--line);border-radius:.9rem;color:var(--muted);font-size:.82rem;line-height:1.35}
+.ph.portrait{aspect-ratio:4/5;width:100%;max-width:22rem;margin-left:auto;border-radius:11rem 11rem 1.2rem 1.2rem;font-size:.95rem}
+.stats{background:var(--surface);border-block:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem;padding-block:1.6rem}
+.stat b{display:block;font:700 2rem/1 Newsreader,Georgia,serif;color:var(--accent)}
+.stat span{color:var(--muted);font-size:.92rem}
+section{padding:4.5rem 0}
+section:nth-of-type(even){background:var(--surface);border-block:1px solid var(--line)}
+.head{display:flex;align-items:baseline;gap:1rem;margin-bottom:2.2rem;flex-wrap:wrap}
+.head h2{font-size:clamp(2rem,4.5vw,3rem);font-weight:700}
+.head p{margin:0;color:var(--muted)}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem;align-items:start}
+.about .ph{aspect-ratio:4/3}
+.tl{position:relative;display:grid;gap:1.4rem;padding-left:1.6rem;border-left:3px solid var(--line)}
+.entry{position:relative;display:grid;grid-template-columns:12rem 1fr;gap:1.5rem;background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1.1rem}
+section:nth-of-type(even) .entry{background:var(--bg)}
+.entry::before{content:"";position:absolute;left:calc(-1.6rem - 8px);top:1.6rem;width:13px;height:13px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.entry .ph{aspect-ratio:4/3;min-height:8rem}
+.entry h3{font-size:1.4rem;font-weight:600}
+.meta{color:var(--muted);font-size:.93rem;margin:.25rem 0 .6rem}
+.entry ul{margin:.4rem 0 0;padding-left:1.1rem}
+.entry li{margin:.28rem 0}
+.tag{display:inline-block;background:var(--accent2);color:#fff;font:600 .72rem/1 "Public Sans",sans-serif;padding:.28rem .6rem;border-radius:99px;margin-left:.5rem;vertical-align:middle}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.2rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1.3rem}
+section:nth-of-type(even) .card{background:var(--bg)}
+.card h3{font-size:1.2rem;margin-bottom:.4rem}
+.card p{margin:.15rem 0;color:var(--muted)}
+.sub{font:600 1.25rem Newsreader,Georgia,serif;margin:2rem 0 .8rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none}
+.chips li{background:var(--soft);color:var(--ink);border-radius:99px;padding:.3rem .9rem;font-size:.94rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem;margin-top:2rem}
+.gallery .ph{aspect-ratio:1}
+footer{background:var(--ink);color:var(--bg);padding:3.5rem 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between;align-items:center}
+footer h2{font-size:2rem}
+footer a{color:var(--bg)}
+footer .btn{border-color:var(--bg);color:var(--bg)}
+@media (max-width:780px){.hero{padding-top:7.5rem}.hero .wrap,.about{grid-template-columns:1fr}.ph.portrait{margin:0;max-width:15rem}.entry{grid-template-columns:1fr}.entry .ph{aspect-ratio:16/9}.float nav{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.ph.has{padding:0;border:0;overflow:hidden;background:var(--ph)}.ph.has img{width:100%;height:100%;object-fit:cover;display:block}.ph.has.portrait img{object-position:center 20%}.ph.has.logo{background:#fff;border:1px solid var(--line)}.ph.has.logo img{object-fit:contain;padding:.7rem}
+.ph.has img{cursor:zoom-in;transition:transform .25s}.ph.has:hover img{transform:scale(1.04)}.ph.has img:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.lb{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;padding:calc(1rem + env(safe-area-inset-top,0px)) 1rem calc(1rem + env(safe-area-inset-bottom,0px));background:rgba(8,12,24,.9);cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:calc(100% - 3rem);object-fit:contain;border-radius:.6rem;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb p{margin:0;color:#e8ecf7;font-size:.95rem;text-align:center}
+.lb button{position:absolute;top:calc(.75rem + env(safe-area-inset-top,0px));right:.9rem;width:2.6rem;height:2.6rem;border:0;border-radius:50%;background:rgba(255,255,255,.16);color:#fff;font-size:1.5rem;line-height:1;cursor:pointer}
+.lb button:focus-visible{outline:3px solid #fff}
+.life-intro{max-width:40rem;color:var(--muted);margin:0 0 2.5rem;font-size:1.1rem}
+.polas{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:2rem;padding:.5rem 0 1rem}
+.polaroid{margin:0;background:#fff;padding:.75rem .75rem 0;border-radius:.4rem;box-shadow:0 10px 30px rgba(15,25,60,.18);transition:transform .3s,box-shadow .3s;color:#1b2438}
+.polas .polaroid:nth-child(1){transform:rotate(-2.5deg)}.polas .polaroid:nth-child(2){transform:rotate(1.8deg) translateY(.8rem)}.polas .polaroid:nth-child(3){transform:rotate(-1.2deg)}
+.polaroid:hover{transform:rotate(0) scale(1.03)!important;box-shadow:0 16px 40px rgba(15,25,60,.28)}
+.polaroid .ph{aspect-ratio:4/5;border-radius:.2rem}
+.polaroid figcaption{font:italic 500 1.25rem/1 Newsreader,Georgia,serif;text-align:center;padding:1rem .5rem 1.1rem}
+.feature{display:grid;grid-template-columns:minmax(14rem,22rem) 1fr;gap:3rem;align-items:center;margin-top:3.5rem}
+.feature .polaroid{transform:rotate(2deg)}
+.feature-text h3{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;margin:.8rem 0 .6rem}
+.feature-text p{color:var(--muted);max-width:32rem;margin:0}
+.stamp{display:inline-block;background:var(--accent2);color:#fff;font:600 .78rem/1 "Public Sans",sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:.45rem .85rem;border-radius:99px;transform:rotate(-3deg)}
+@media (max-width:780px){.feature{grid-template-columns:1fr;gap:2rem}.feature .polaroid{max-width:20rem;margin:0 auto}.polas{gap:1.5rem}}
+@media (prefers-reduced-motion:reduce){.polaroid{transition:none}}
+</style>
+</head>
+<body>
+<header class="float">
+<a class="brand" href="#top">Sandani Piyasena</a>
+<nav aria-label="Sections"><a href="#about">About</a><a href="#education">Education</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a><a href="#volunteer">Volunteering</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+<a class="cv" href="cv.pdf" target="_blank" rel="noopener">View CV</a>
+</header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Sandani Piyasena</h1>
+<p class="role">French language educator</p>
+<p>Secondary French teacher with three years of classroom experience, now completing teacher certification at Simon Fraser University with a French Immersion focus. Based in Coquitlam, BC.</p>
+<div class="btns"><a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">View my CV</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="ph has portrait"><img src="pictures/Portraitphoto.jpg" alt="Portrait of Sandani Piyasena" loading="lazy"></div>
+</div></div>
+
+<div class="stats"><div class="wrap">
+<div class="stat"><b>3 years</b><span>Teaching secondary French</span></div>
+<div class="stat"><b>B.Ed.</b><span>Minor in French Education, SFU</span></div>
+<div class="stat"><b>DALF C1</b><span>French language diploma</span></div>
+<div class="stat"><b>PDP</b><span>French Immersion module, in progress</span></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+<div class="head"><h2>About me</h2></div>
+<div class="about">
+<div>
+<p>I teach French so that students can use it with confidence and enjoy the culture that comes with it. My classrooms are structured, warm and inclusive, with lessons built on clear standards and regular feedback.</p>
+<p>I have planned and delivered French courses, served as a class teacher, Grade 9 coordinator and house mistress, and worked closely with parents and colleagues. I am now completing my teacher education in British Columbia and am seeking French and French Immersion teaching roles with BC school boards.</p>
+</div>
+<div class="ph has"><img src="pictures/Teaching_photo.jpg" alt="Teaching a French class at the whiteboard" loading="lazy"></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="head"><h2>Education</h2></div>
+<div class="tl">
+<div class="entry"><div class="ph has"><img src="pictures/SFUPDP.jpg" alt="Group photo with the SFU Faculty of Education cohort" loading="lazy"></div><div><h3>Professional Development Program, French Immersion module<span class="tag">In progress</span></h3><p class="meta">Simon Fraser University</p></div></div>
+<div class="entry"><div class="ph has"><img src="pictures/SFU_BEd.jpg" alt="Sandani with SFU Faculty of Education colleagues at an event" loading="lazy"></div><div><h3>Bachelor of Education, minor in French Education</h3><p class="meta">Simon Fraser University</p></div></div>
+<div class="entry"><div class="ph has"><img src="pictures/UniversityofBedfordshire.jpg" alt="Sandani in graduation gown and cap, University of Bedfordshire" loading="lazy"></div><div><h3>Master of Business Administration (part-time)</h3><p class="meta">University of Bedfordshire, UK · 2019 – 2021</p></div></div>
+<div class="entry"><div class="ph has"><img src="pictures/UniversityofKelaniya.jpg" alt="Sandani in graduation gown by a fountain, University of Kelaniya" loading="lazy"></div><div><h3>Bachelor of Arts in French Language</h3><p class="meta">University of Kelaniya, Sri Lanka · 2015 – 2019</p><p>Thesis: <em>Une étude sur les titres des romans traduits : français–anglais, anglais–français</em></p></div></div>
+</div>
+</div></section>
+
+<section id="teaching"><div class="wrap">
+<div class="head"><h2>Teaching experience</h2></div>
+<div class="tl">
+<div class="entry"><div class="ph has logo"><img src="pictures/EcoleSalishSecondary.png" alt="École Salish Secondary Wolves logo" loading="lazy"></div><div><h3>Student Teacher<span class="tag">Current</span></h3><p class="meta">École Salish Secondary, Surrey, BC · Oct 2026 – Dec 2026</p>
+<ul><li>Practicum in a French Immersion secondary classroom with a mentor teacher.</li><li>Planning and delivering French lessons and assessing student progress.</li></ul></div></div>
+<div class="entry"><div class="ph has logo"><img src="pictures/Gateway.jpg" alt="Gateway College crest" loading="lazy"></div><div><h3>French Teacher, Secondary School</h3><p class="meta">Gateway College, Dehiwala · Jun 2021 – Jul 2024</p>
+<ul><li>Developed and delivered French lesson plans aligned with Pearson Edexcel standards.</li><li>Assessed student progress and fostered a positive, inclusive classroom.</li><li><strong>Class teacher:</strong> supported a class’s academic and personal development and was the main contact for parents.</li><li><strong>Grade 9 coordinator:</strong> kept curriculum and assessment consistent and connected students, parents and administration.</li><li><strong>House mistress:</strong> managed house welfare and discipline and organized events and competitions.</li></ul></div></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="head"><h2>Other professional experience</h2></div>
+<div class="tl">
+<div class="entry"><div class="ph has"><img src="pictures/MaiGlobeTravels.jpg" alt="Mai Globe Travels team at a Christmas gathering" loading="lazy"></div><div><h3>Sales and Reservations Supervisor</h3><p class="meta">Mai Globe Travels · Sep 2019 – Sep 2020</p>
+<ul><li>Directed and evaluated sales and reservations staff, set schedules and trained new employees.</li><li>Resolved cross-department issues and kept operations running during urgent situations.</li></ul></div></div>
+<div class="entry"><div class="ph has logo"><img src="pictures/LuxeAsia.png" alt="Luxe Asia logo" loading="lazy"></div><div><h3>Sales and Reservations Supervisor</h3><p class="meta">Luxe Asia (Pvt) Ltd. · Feb 2019 – Aug 2019</p>
+<ul><li>Designed tailored travel programs for French-speaking clients and prepared cost estimates.</li><li>Resolved issues during tours and compiled itineraries, maps and travel packets.</li></ul></div></div>
+</div>
+</div></section>
+
+<section id="volunteer"><div class="wrap">
+<div class="head"><h2>Leadership and volunteering</h2></div>
+<div class="tl">
+<div class="entry"><div class="ph has"><img src="pictures/AIESEC_Vice_President.jpg" alt="AIESEC Colombo North team at NLDS 2016" loading="lazy"></div><div><h3>Vice President, Outgoing Global Talent</h3><p class="meta">AIESEC Colombo North, University of Kelaniya · 2016 – 2017</p>
+<ul><li>Supervised team members and leaders and aligned their work with organizational goals.</li><li>Built international partnerships and recruited candidates for global placements.</li><li>Developed marketing strategies and presented the program at institutes.</li></ul></div></div>
+<div class="entry"><div class="ph has"><img src="pictures/AIESEC_Team_Leader.jpg" alt="AIESEC Colombo North local committee meeting, April 2017" loading="lazy"></div><div><h3>Team Leader, Outgoing Global Talent</h3><p class="meta">AIESEC Colombo North · 2016</p>
+<ul><li>Led team meetings, performance reviews and social media campaigns.</li></ul></div></div>
+<div class="entry"><div class="ph has"><img src="pictures/volunteerthailand.jpeg" alt="Volunteering as an English teacher at Assumption University, Thailand" loading="lazy"></div><div><h3>Volunteer English Teacher</h3><p class="meta">Assumption University, Thailand · 2016</p>
+<ul><li>Taught pupils from under-resourced communities through problem-based learning.</li></ul></div></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="head"><h2>Languages and skills</h2></div>
+<div class="grid">
+<div class="card"><h3>French</h3><p>DALF C1, Ministère de l’Éducation nationale, France</p></div>
+<div class="card"><h3>English</h3><p>IELTS General Training: Listening 8.0, Reading 8.5, Speaking 7.5, Writing 7.0</p></div>
+</div>
+<p class="sub">Teaching</p>
+<ul class="chips"><li>Language instruction</li><li>Instructional strategies</li><li>Classroom management</li><li>Curriculum development</li><li>Student motivation</li><li>Conflict resolution</li></ul>
+<p class="sub">Interpersonal</p>
+<ul class="chips"><li>Effective communication</li><li>Empathy</li><li>Patience</li><li>Team collaboration</li><li>Cultural sensitivity</li><li>Leadership</li></ul>
+<p class="sub">Digital</p>
+<ul class="chips"><li>Microsoft Teams / Power Apps</li><li>Word, Excel, PowerPoint</li><li>ChatGPT for educators</li></ul>
+</div></section>
+
+<section id="references"><div class="wrap">
+<div class="head"><h2>References</h2><p>Email contacts for each referee are listed below.</p></div>
+<div class="grid">
+<div class="card"><h3>Natalie Kidwell</h3><p>French Immersion Teacher</p><p>École Salish Secondary</p><p><a href="mailto:kidwell_n@surreyschools.ca">kidwell_n@surreyschools.ca</a></p></div>
+<div class="card"><h3>Dr. Cécile Bullock</h3><p>Professor, Faculty of Education</p><p>Simon Fraser University</p><p><a href="mailto:cecile_bullock@sfu.ca">cecile_bullock@sfu.ca</a></p></div>
+<div class="card"><h3>Isabelle Côté</h3><p>Senior Lecturer, Faculty of Education</p><p>Simon Fraser University</p><p><a href="mailto:isabelle_cote_education@sfu.ca">isabelle_cote_education@sfu.ca</a></p></div>
+<div class="card"><h3>Prof. Niroshani Gunasekara</h3><p>Senior Lecturer, Modern Languages</p><p>University of Kelaniya</p><p><a href="mailto:niroshinigunasekera@kln.ac.lk">niroshinigunasekera@kln.ac.lk</a></p></div>
+<div class="card"><h3>Dr. Harsha Alles</h3><p>Chairman</p><p>Gateway Group</p><p><a href="mailto:bianca.heyzer@gateway.lk">bianca.heyzer@gateway.lk</a></p></div>
+</div>
+</div></section>
+<section id="life"><div class="wrap">
+<div class="head"><h2>Beyond the classroom</h2><p>A glimpse of life outside of teaching.</p></div>
+<p class="life-intro">Teaching is my calling, but it is not my whole story. These are a few moments from the life I enjoy outside school.</p>
+<div class="polas">
+<figure class="polaroid"><div class="ph has"><img src="pictures/galary1.jpeg" alt="Snapshot from life outside of teaching" loading="lazy"></div><figcaption>Away from the classroom</figcaption></figure>
+<figure class="polaroid"><div class="ph has"><img src="pictures/galary2.jpeg" alt="Snapshot from life outside of teaching" loading="lazy"></div><figcaption>Making memories</figcaption></figure>
+<figure class="polaroid"><div class="ph has"><img src="pictures/galary3.jpeg" alt="Snapshot from life outside of teaching" loading="lazy"></div><figcaption>Simple joys</figcaption></figure>
+</div>
+<div class="feature">
+<figure class="polaroid tall"><div class="ph has"><img src="pictures/galary4.jpeg" alt="Sandani at a back-to-school event wearing her high school uniform" loading="lazy"></div><figcaption>Back to school, in uniform</figcaption></figure>
+<div class="feature-text"><span class="stamp">Back to school</span><h3>Full circle</h3><p>At a back-to-school event, I put my high school uniform back on. It was a fun reminder of where my love for learning began, and of why I want to be in front of a classroom today.</p></div>
+</div>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<div><h2>Let’s talk</h2><p>Coquitlam BC, Canada<br><a href="mailto:sandani.cham@gmail.com">sandani.cham@gmail.com</a></p></div>
+<a class="btn" href="cv.pdf" target="_blank" rel="noopener">View my CV</a>
+</div></footer>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged photo"><button type="button" aria-label="Close photo">&times;</button><img alt=""><p></p></div>
+<script>
+(function(){
+var lb=document.getElementById('lb'),big=lb.querySelector('img'),cap=lb.querySelector('p'),btn=lb.querySelector('button'),last=null;
+function open(src){last=src;big.src=src.src;big.alt=src.alt;cap.textContent=src.alt;lb.classList.add('open');btn.focus();document.body.style.overflow='hidden'}
+function close(){lb.classList.remove('open');document.body.style.overflow='';if(last)last.focus()}
+document.querySelectorAll('.ph.has img').forEach(function(i){
+i.tabIndex=0;i.setAttribute('role','button');
+i.addEventListener('click',function(){open(i)});
+i.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(i)}});
+});
+lb.addEventListener('click',close);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))close()});
+})();
+</script>
+</body>
+</html>
